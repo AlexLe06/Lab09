@@ -92,17 +92,20 @@ public class MainViewController implements Initializable {
     
     @FXML
     void handleClose(ActionEvent event) {
-        
+        System.out.println("CLose has been pressed");
+        newItem.setDisable(false);
+        openItem.setDisable(false);
+        closeItem.setDisable(true);
     }
 
     @FXML
     void handleCopy(ActionEvent event) {
-
+        System.out.println("Copy pressed");
     }
 
     @FXML
     void handleFind(ActionEvent event) {
-
+        System.out.println("Find pressed");
     }
 
     @FXML
@@ -124,12 +127,12 @@ public class MainViewController implements Initializable {
 
     @FXML
     void handleOpen(ActionEvent event) {
-
+        System.out.println("Open pressed");
     }
 
     @FXML
     void handleReplace(ActionEvent event) {
-
+        System.out.println("Replace pressed");
     }
 
     @FXML
